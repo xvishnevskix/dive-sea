@@ -1,0 +1,73 @@
+button{
+    border-radius: 11.8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blackButton{
+    border: none;
+    color: #FFF;
+    background: #141416;
+    font-size: 14.16px;
+    letter-spacing: .12px;
+    line-height: 150%;
+}
+
+.whiteButton{
+    border: 1.5px solid #141416;
+    color: black;
+    background: transparent;
+    font-size: 16.27px;
+    line-height: auto;
+    letter-spacing: 1%;
+}
+
+@media screen and (max-width: 1024px) {
+    .blackButton{
+        height: 42.671px;
+        border-radius: 8.827px;
+        background: #000;
+        font-size: 11.571px;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.116px;
+        padding: 6px 13px;
+        flex-shrink: 0;
+    }    
+   .whiteButton{
+        height: 42.671px;
+        border-radius: 8.827px;
+        color: #000;
+        font-size: 11.571px;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.116px;
+        flex-shrink: 0;
+        border: 1.067px solid #000;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .blackButton{
+        font-size: 14.232px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 21.348px */
+        letter-spacing: 0.119px;
+    }    
+   .whiteButton{
+        height: 42.671px;
+        border-radius: 8.827px;
+        color: #000;
+        font-size: 11.571px;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.116px;
+        flex-shrink: 0;
+        border: 1.067px solid #000;
+    }
+}

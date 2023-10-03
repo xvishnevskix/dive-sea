@@ -1,0 +1,145 @@
+.newBid{
+    padding: 11.9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    background: #FFF;
+    box-shadow: 0 28.48px 19px #4646460a;
+    border-radius: 13.2px;
+    
+    .fullInformation{
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        
+        .shortPhoto{
+            width: 39.874px;
+            height: 39.874px;
+            flex-shrink: 0;
+            border-radius: 34.178px;
+        }
+        
+        .textInfo{
+            margin: 0 20px 0 11.39px;
+            
+            p{
+                color: #949494 !important;
+                font-size: 13.291px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 22.785px;
+                padding: 0;
+                margin: 0;
+                
+                span{
+                    color: #141416;
+                }
+            }
+            
+            .bold{
+                display: block;
+                color: #141416;
+                font-size: 11.393px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 18.988px; 
+            }
+            
+            .date{
+                display: block;
+                color: #949494;
+                font-size: 11.393px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18.988px;
+            }
+        }
+        
+        .bigPhoto{
+            width: 60.761px;
+            height: 60.761px;
+            flex-shrink: 0;
+            border-radius: 10.443px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .newBid{
+        .fullInformation{
+            .shortPhoto{
+                width: 28.394px;
+                height: 28.394px;
+                flex-shrink: 0;
+                border-radius: 24.338px;
+            }
+            
+            .textInfo{                
+                p{
+                    font-size: 9.453px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 16.204px;
+                }
+                
+                .bold{
+                    font-size: 8.102px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 13.504px;
+                }
+                
+                .date{
+                    font-size: 8.102px;
+                    font-weight: 400;
+                    line-height: 13.504px;
+                }
+            }
+            
+            .bigPhoto{
+                width: 43.212px;
+                height: 43.212px;
+                border-radius: 7.427px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .newBid{
+        .fullInformation{
+            .shortPhoto{
+                width: 19.056px;
+                height: 19.056px;
+                flex-shrink: 0;
+                border-radius: 16.334px;
+            }
+            
+            .textInfo{                
+                p{
+                    color: #949494;
+                    font-size: 6.355px;
+                    line-height: 10.894px;
+                }
+                
+                .bold{
+                    font-size: 5.447px;
+                    line-height: 9.078px;
+                }
+                
+                .date{
+                    font-size: 5.447px;
+                    line-height: 9.078px;
+                }
+            }
+            
+            .bigPhoto{
+                width: 29.05px;
+                height: 29.05px;
+                border-radius: 4.993px;
+            }
+        }
+    }
+}

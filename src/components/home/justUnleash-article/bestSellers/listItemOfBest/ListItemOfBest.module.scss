@@ -1,0 +1,78 @@
+.listItem{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .listPhoto{
+        width: 48.756px;
+        height: 48.756px;
+        flex-shrink: 0;
+        border-radius: 41.791px;
+    }
+    
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        color: #23262F;
+        text-align: center;
+        font-size: 12.189px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20.895px; 
+        flex: .85;
+        
+        span{
+            display: block;
+            color: #777E90;
+            text-align: center;
+            font-size: 10.448px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17.413px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .listItem{
+        .listPhoto{
+            width: 34.719px;
+            height: 34.719px;
+            flex-shrink: 0;
+            border-radius: 29.759px;
+        }
+        
+        .info{
+            font-size: 8.68px;
+            line-height: 14.879px;
+
+            span{
+                font-size: 7.44px;
+                line-height: 12.4px;
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 600px) {
+    .listItem{
+        margin: 10px;
+        .listPhoto{
+            width: 23.301px;
+            height: 23.301px;
+            border-radius: 19.972px;
+        }
+        
+        .info{
+            font-size: 5.825px;
+            line-height: 9.986px;
+
+            span{
+                font-size: 4.993px;
+                line-height: 8.322px;
+            }
+        }
+    }    
+}
