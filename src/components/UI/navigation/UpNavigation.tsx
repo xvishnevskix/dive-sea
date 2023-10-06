@@ -14,11 +14,15 @@ const UpNavigation: React.FC = () => {
   return (
     <>
       <nav className={styles.navigation}>
-          <p className={styles.logo}>
-            <Logo onClick={()=>nav('/')}/>
-            <span>DiveSea</span>
-          </p>
-          <MenuOutlined className={styles.burger} onClick={()=>setIsOpen(pre=>!pre)} />
+          <div className={styles.mobyle}>
+              <div >
+                  <p className={styles.logo}>
+                      <Logo onClick={()=>nav('/')}/>
+                      <span>DiveSea</span>
+                  </p>
+              </div>
+              <MenuOutlined className={styles.burger} onClick={()=>setIsOpen(pre=>!pre)} />
+          </div>
           <ul>
               <li><NavLink to='/DISCOVER' className={({isActive})=>isActive ? styles.active : styles.navLink}>DISCOVER</NavLink></li>
               <li><NavLink to='/CREATORS' className={({isActive})=>isActive ? styles.active : styles.navLink}>CREATORS</NavLink></li>
@@ -29,9 +33,9 @@ const UpNavigation: React.FC = () => {
             <span><Search /></span>
             <input placeholder='Search Art Work / Creator'/>
           </label>
-          <Button onClick={()=>nav('/SELL')} name='Connect Wallet' theme='black' className={styles.btn} />
+          <button className={styles.btn}>CONNECT WALLET</button>
       </nav> 
-      <ul className={`${styles.downMenu} ${isOpen ? styles.open : '' }`}>
+      <ul className={`${styles.downMenu} ${isOpen ? styles.open : styles.closed }`}>
         <li><NavLink to='/DISCOVER' className={({isActive})=>isActive ? styles.active : styles.navLink}>DISCOVER</NavLink></li>
         <li><NavLink to='/CREATORS' className={({isActive})=>isActive ? styles.active : styles.navLink}>CREATORS</NavLink></li>
         <li><NavLink to='/SELL' className={({isActive})=>isActive ? styles.active : styles.navLink}>SELL</NavLink></li>

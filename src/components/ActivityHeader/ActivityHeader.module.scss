@@ -3,21 +3,45 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 671px;
     color: #8C8C8C;
+    margin-bottom: 16px;
+
+  :not(:last-child) {
+    margin-right: 18px;
+  }
 
   .btn {
-    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background: #FFF;
+    flex: 1 1 320px;
+    font-weight: 400;
     font-size: 16px;
     color: #000000;
-    line-height: 25px;
+    line-height: 20px;
     position: relative;
     padding: 0;
-    margin-left: 7px;
     border: none;
-    border-radius: 0;
+    border-radius: 10px;
     box-shadow: none;
-    background-color: transparent;
     letter-spacing: inherit;
-    transition: color 0.2s linear;
+    transition: background 0.2s ease-in-out;
+
+    &:hover {
+      background: #e0e0e0;
+    }
+
+    .arrow {
+      padding-left: 12px;
+    }
+
+    .cart, .chain {
+    margin-right: 10px;
+
+    }
   }
 }

@@ -1,8 +1,8 @@
 import React from 'react';
 import { ILeadersNft } from '../../../data/DATA';
-import { IFunc } from '../../home/topCollection/TopCollection';
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@ant-design/icons';
 import styles from './ToggleButtons.module.scss';
+import {IFunc} from "../allProducts/AllProducts";
 
 interface IToggleButtonsProps{
     filterArray: ILeadersNft[]

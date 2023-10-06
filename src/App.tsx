@@ -3,7 +3,7 @@ import Router from './router/Router';
 
 const App: React.FC = () => {
   return (
-    <div style={{width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'start'}}>
+    <div style={{display: "flex", flexDirection: "column", justifyContent: "start", alignItems: "center", padding: 0, margin: 0}}>
       <Router />
     </div>
   )

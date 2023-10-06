@@ -1,22 +1,12 @@
-.wrapper {
-
-  background: #141416;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 160px 0 0;
-  padding: 0;
-}
-
 .footer{
-  min-width: 1300px;
+  width: 100%;
+  max-width: 1300px;
   background: #141416;
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 60px 0 105px;
-
+  margin: 160px 0 0;
 
   &::after{
     content: '';
@@ -36,6 +26,13 @@
 
     svg{
       margin-right: 10px;
+      width: 46px;
+      height: 46px;
+
+      @media (max-width: 400px)  {
+        width: 43px;
+        height: 43px;
+      }
     }
 
     h2{
@@ -44,6 +41,12 @@
       font-style: normal;
       font-weight: 600;
       line-height: 130%;
+       @media (max-width: 1024px)  {
+         font-size: 21px;
+       }
+      @media (max-width: 400px)  {
+        font-size: 20px;
+      }
     }
   }
 
@@ -51,6 +54,21 @@
     flex: .2;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+
+    @media (max-width: 1024px)  {
+      flex: none;
+      svg {
+        margin: 0 7px;
+      }
+    }
+
+    @media (max-width: 400px)  {
+      svg {
+        width: 60%;
+        height: 60%;
+          margin: 0 1px;
+      }
+    }
   }
 }

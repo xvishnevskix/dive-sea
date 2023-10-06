@@ -2,13 +2,20 @@ import React, { useMemo, useState } from 'react';
 import { ILeadersNft, nftLeaders } from '../../../data/DATA';
 import ToggleButtons from '../toggleButtons/ToggleButtons';
 import Card from '../card/Card';
-import { IFunc } from '../../home/topCollection/TopCollection';
 import styles from './AllProducts.module.scss';
 import ButtonList, { IListOfBtns } from '../buttonList/ButtonList';
 
 interface IAllProductsProps{
     header?: string | undefined
     btns?: IListOfBtns[] | null
+}
+
+export interface IFunc{
+    func: (el: ILeadersNft[]) => ILeadersNft[]
+}
+interface ITopCollectionProps{
+    header: string
+    btns?: boolean
 }
 const AllProducts:React.FC<IAllProductsProps> = ({header, btns}) => {
 
@@ -18,8 +25,6 @@ const AllProducts:React.FC<IAllProductsProps> = ({header, btns}) => {
 
   return (
     <article className={styles.container}>
-        {/*<h1>{header}</h1>*/}
-        {/*<ButtonList btns={btns} />*/}
         <div className={styles.cardContainer}>
             {
                 filterArray.map(prod=>(
@@ -27,7 +32,6 @@ const AllProducts:React.FC<IAllProductsProps> = ({header, btns}) => {
                 ))
             }
         </div>
-        {/*<ToggleButtons filterArray={filterArray} setFilter={setFilter}/>*/}
     </article>
   )
 }
