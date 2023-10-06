@@ -97,6 +97,7 @@
   align-content: end;
   justify-content: end;
   padding-left: 80px;
+  margin-bottom: 240px;
 
   @media (max-width: 1024px){
     //grid-template-rows: auto;
@@ -222,6 +223,14 @@
   flex-direction: row;
   position: relative;
 
+
+  svg {
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
   svg:not(:last-child) {
     padding-right: clamp(50px, 5vw, 66px);
 
@@ -323,7 +332,7 @@
 .right {
   display: flex;
   flex-direction: column;
-  justify-self: end;
+  justify-content: center;
   flex: 1 1 auto;
 }
 
@@ -333,6 +342,4 @@
 
 .items {
   padding-top: 124px;
-
-
 }

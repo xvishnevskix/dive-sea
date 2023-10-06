@@ -10,7 +10,7 @@ const Router:React.FC = () => {
     <HashRouter>
       <UpNavigation />
       <Routes>
-          <Route path='*' element={<h2>Not found !</h2>} />
+          <Route path='*' element={<h2 style={{flex: "1 1 auto", padding: "250px"}}>Not found !</h2>} />
           <Route path='/' element={<Profile />} />
       </Routes>
       <Footer />
